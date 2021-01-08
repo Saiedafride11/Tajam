@@ -1,0 +1,825 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+h1.h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 25px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face{
+	font-family: 'PensumDisplay-Bold';
+	src: url(../fonts/Pensum_Display/PensumDisplay-Bold.otf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat/Montserrat-Black.eot');
+    src: url('../fonts/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Black.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* =============================================
+			  Start Heading Section                 
+================================================= */
+.header-section{
+	width: 100%;
+	padding: 20px 0px;
+	background-color: #322a53;
+}
+.header-section .header{
+	width: 100%;
+}
+.header-section .header .header-logo{
+	width: 40%;
+	float: left;
+}
+.header-section .header .header-menu{
+	width: 60%;
+	float: left;
+}
+.header-section .header .header-menu ul{
+	text-align: right;
+}
+.header-section .header .header-menu ul li{
+	display: inline;
+}
+.header-section .header .header-menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat-Regular';
+	padding: 10px 0px;
+	margin-left: 20px;
+	color: #fff;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.header-section .header .header-menu ul li a:hover{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.isStuck{
+    left: 0px;
+    width: 100%;
+    background: #322a53;
+}
+.navbar-wrapper{
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    z-index: 15;
+}
+/* =============================================
+			  End Heading Section                 
+================================================= */
+
+/* =============================================
+			  Start slider Section                 
+================================================= */
+
+.slider{
+    width: 100%;
+}
+.slider .container-fluid{
+    padding: 0px;
+}
+.slider .carousel-caption{
+    bottom: 15%;
+}
+.slider .carousel-caption h2{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    letter-spacing: 2px;
+	color: #fff;
+	font-family: 'PensumDisplay-Bold';
+	position: relative;
+}
+.slider .carousel-caption h2::after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 3px;
+	background: #00e0d0;
+	top: 80px;
+	left: 400px;
+}
+.slider .carousel-caption p{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 60px;
+}
+.slider .carousel-caption .banner-btn {
+	margin-top: 60px;
+}
+.slider .carousel-caption .banner-btn a{
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid #00bc9c;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat-Regular';
+	text-decoration: none;
+}
+.slider .carousel-caption .banner-btn a:hover, .slider .carousel-caption .banner-btn a:focus{
+    background: #00bc9c;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: 1s;
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+/* =============================================
+			  End slider Section                 
+================================================= */
+
+/* =============================================
+			  Start story Section                 
+================================================= */
+.story-section{
+	width: 100%;
+	padding: 80px 0px;
+}
+.story-section .story{
+	width: 100%;
+}
+.story-section .story .story-left{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.story-section .story .story-left img{
+	margin-top: 110px;
+}
+.story-section .story .story-right{
+	width: 50%;
+	float: left;
+}
+
+.story-section .story .story-right h4{
+    font-size:25px;
+    font-weight: 700;
+	color: #66636d;
+	font-family: 'Montserrat-Bold';
+	letter-spacing: 2px;
+}
+.story-section .story .story-right p{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #66636d;
+	font-family: 'Montserrat-Regular';
+	margin-top: 20px;
+}
+.story-section .story .story-right  .story-btn {
+	margin-top: 60px;
+}
+.story-section .story .story-right  .story-btn a{
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid #00bc9c;
+    color: #00bc9c;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat-Regular';
+	text-decoration: none;
+}
+.story-section .story .story-right  .story-btn a:hover, .story-section .story .story-right  .story-btn a:focus{
+    background: #00bc9c;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: 1s;
+}
+/* =============================================
+			  End story Section                 
+================================================= */
+
+/* =============================================
+			  Start video Section                 
+================================================= */
+.video-section{
+	width: 100%;
+	background-image: url(../images/video-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 200px 0px;
+}
+.video-section .video{
+	width: 100%;
+	text-align: center;
+}
+/* =============================================
+			  End video Section                 
+================================================= */
+
+/* =============================================
+			  Start exprience Section                 
+================================================= */
+.exprience-section{
+	width: 100%;
+	padding-bottom: 60px;
+}
+.exprience-section .exprience{
+	width: 100%;
+}
+.exprience-section .exprience .exprience-title{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.exprience-section .exprience .exprience-title h4{
+    font-size:25px;
+    font-weight: 700;
+	color: #66636d;
+	font-family: 'Montserrat-Bold';
+	letter-spacing: 2px;
+	padding-top: 80px;
+}
+.exprience-section .exprience .exprience-title p{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #66636d;
+	font-family: 'Montserrat-Regular';
+	margin-top: 0px;
+	position: relative;
+}
+.exprience-section .exprience .exprience-title p::after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 3px;
+	background: #66636d;
+	top: 40px;
+	left: 500px;
+}
+.exprience-inner{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+
+.exprience-inner h6{
+    font-size:15px;
+    font-weight: 700;
+	color: #413d4b;
+	font-family: 'Montserrat-Bold';
+	margin-top: 30px;
+}
+.exprience-inner p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+	color: #66636d;
+	font-family: 'Montserrat-Regular';
+	margin-top: 0px;
+}
+.exprience-section .e-1{
+	border-right: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
+}
+.exprience-section .e-2{
+	border-right: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
+	padding-bottom: 8px;
+}
+.exprience-section .e-3{
+	border-bottom: 1px solid #b6b6b6;
+	padding-bottom: 0px;
+}
+.exprience-section .e-4{
+	border-right: 1px solid #b6b6b6;
+}
+.exprience-section .e-5{
+	border-right: 1px solid #b6b6b6;
+}
+.exprience-section .e-6{
+}
+.exprience-inner-extra-bottom{
+	
+}
+.exprience-inner-extra-bottom img{
+	margin-top: 50px;
+}
+/* =============================================
+			  End exprience Section                 
+================================================= */
+
+/* =============================================
+			  Start team-section                 
+================================================= */
+.team-section{
+	width: 100%;
+	background-image: url(../images/team-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 80px;
+}
+.team-section .team{
+	width: 100%;
+}
+.team-section .team .team-title{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.team-section .team .team-title h4{
+    font-size:25px;
+    font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	letter-spacing: 2px;
+	padding-top: 80px;
+}
+.team-section .team .team-title p{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 0px;
+	position: relative;
+}
+.team-section .team .team-title p::after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 3px;
+	background: #fff;
+	top: 40px;
+	left: 500px;
+}
+
+.team-inner{
+	width: 23%;
+	margin-right: 2%;
+	float: left;
+	text-align: center;
+	border: 1px solid #fff;
+	margin-bottom: 50px;
+}
+.team-inner .team-details{
+	width: 100%;
+	height: 300px;
+	background: #fff;
+}
+.team-inner h6{
+    font-size:15px;
+    font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	margin-top: 50px;
+}
+.team-inner p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	padding-bottom: 30px;
+}
+.team-section .team .team-extra{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	text-align: center;
+}
+.team-section .team .team-btn {
+	margin-top: 40px;
+	text-align: center;
+}
+.team-section .team .team-btn a{
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid #00bc9c;
+    color: #00bc9c;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat-Regular';
+	text-decoration: none;
+}
+.team-section .team .team-btn a:hover, .team-section .team .team-btn a:focus{
+    background: #00bc9c;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: 1s;
+}
+/* =============================================
+			  End team-section                 
+================================================= */
+/* =============================================
+			  Start box-section                 
+================================================= */
+.box-section{
+	width: 100%;
+	padding: 70px 0px;
+}
+.box-section .container-fluid {
+	padding: 0px;
+}
+.box-section .box{
+	width: 100%;
+}
+.box-section .box .box-title{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.box-section .box .box-title h4{
+    font-size:25px;
+    font-weight: 700;
+	color: #66636d;
+	font-family: 'Montserrat-Bold';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.box-section .box .box-title p{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #66636d;
+	font-family: 'Montserrat-Regular';
+	margin-top: 0px;
+	position: relative;
+}
+.box-section .box .box-title p::after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 3px;
+	background: #66636d;
+	top: 40px;
+	left: 570px;
+}
+.box-inner{
+	width:16.66%;
+	float: left;
+	height: 200px;
+	background: #b6b6b6;
+}
+.box-extra{
+	background: #8a8a8a;
+}
+.box-section .box-btn{
+	text-align: center;
+	padding-top: 70px;
+}
+.box-section .box-btn a{
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid #00bc9c;
+    color: #00bc9c;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat-Regular';
+	text-decoration: none;
+}
+.box-section .box-btn a:hover, .box-section .box-btn a:focus{
+    background: #00bc9c;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: 1s;
+}
+/* =============================================
+			  End box-section                 
+================================================= */
+
+/* =============================================
+			  Start feedback-section                 
+================================================= */
+.feedback-section{
+	width: 100%;
+	background-image: url(../images/feedback-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0px;
+	text-align: center;
+}
+.feedback-section p{
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 50px;
+}
+.feedback-section .feedback-details h6{
+    font-size:15px;
+    font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	margin-top: 50px;
+}
+.feedback-section .feedback-details p{
+	margin-top:0px;
+	font-size: 13px;
+	margin-bottom: 40px;
+}
+/* =============================================
+			  End feedback-section                 
+================================================= */
+
+/* =============================================
+			  Start form-section                 
+================================================= */
+.form-section{
+	width: 100%;
+	padding: 80px 0px;
+}
+.form-section .form{
+	width: 100%;
+}
+.form-section .form .form-left{
+	width: 50%;
+	float: left;
+}
+.form-section .form .form-left h4{
+    font-size:20px;
+    font-weight: 700;
+	color: #66636d;
+	font-family: 'Montserrat-Bold';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.form-section .form .form-left .form-inner{
+    width: 100%;
+}
+.form-section .form .form-left .form-inner .main-form{
+	width: 80%;
+	padding: 5px;
+	margin-top: 20px;
+}
+.form-section .form .form-left .form-inner .form-btn{
+	padding-top: 30px;
+}
+.form-section .form .form-left .form-inner .form-btn a{
+    padding: 10px 50px;
+    background: transparent;
+    border: 1px solid #00bc9c;
+    color: #00bc9c;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat-Regular';
+	text-decoration: none;
+}
+.form-section .form .form-left .form-inner .form-btn a:hover, .form-section .form .form-left .form-inner .form-btn a:focus{
+    background: #00bc9c;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: 1s;
+}
+.form-section .form .form-right{
+	width: 50%;
+	float: left;
+}
+.form-section .form .form-right h4{
+    font-size:20px;
+    font-weight: 700;
+	color: #66636d;
+	font-family: 'Montserrat-Bold';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+/* =============================================
+			  End form-section                 
+================================================= */
+
+/* =============================================
+			  Start footer-section                 
+================================================= */
+.footer-section{
+	width: 100%;
+	background-image: url(../images/footer-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 80px 0px;
+}
+.footer-section .footer{
+	width: 100%;
+}
+/* left */
+.footer-section .footer .footer-left{
+	width: 33.33%;
+	float: left;
+}
+.footer-section .footer .footer-left p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 30px;
+}
+.footer-section .footer .footer-left h6{
+    font-size:13px;
+    font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	margin-top: 30px;
+}
+/* middle */
+.footer-section .footer .footer-middle{
+	width: 33.33%;
+	float: left;
+}
+.footer-section .footer .footer-middle h6{
+    font-size:16px;
+    font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	margin-top: 10px;
+	margin-bottom: 43px;
+}
+.footer-section .footer .footer-middle .media{
+	margin-top: 0px;
+}
+.footer-section .footer .footer-middle i{
+	color: #fff;
+	margin-top: 8px;
+}
+.footer-section .footer .footer-middle p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-left: 15px;
+}
+/* right */
+.footer-section .footer .footer-right{
+	width: 33.33%;
+	float: left;
+}
+.footer-section .footer .footer-right h6{
+    font-size:16px;
+    font-weight: 700;
+	color: #fff;
+	font-family: 'Montserrat-Bold';
+	margin-top: 10px;
+}
+.footer-right-Subscribe{
+	width: 250px;
+	padding: 5px;
+	background: transparent;
+	border: 1px solid #66636d;
+	margin-top: 33px;
+}
+.footer-right-Subscribe::placeholder{
+	color: #8a8a8a;
+}
+.footer-section .footer .footer-right input{
+	color: #fff;
+}
+.footer-section .footer .footer-right .fas{
+	padding: 7px 15px 9px;
+	background: #8a8a8a;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.footer-section .footer .footer-right .fas:hover{
+	background: #fff;
+	color: #322a53;
+}
+.footer-social-media ul{
+	margin-top: 30px;
+}
+.footer-social-media li{
+	display: inline;
+}
+.footer-social-media li i{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	margin-right: 10px;
+	text-align: center;
+	border-radius: 50%;
+}
+.footer-social-media li i:hover{
+	background: #fff;
+	border:1px solid transparent;
+	color:#322a53
+}
+.footer-section .footer .footer-right p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	margin-top: 50px;
+	text-align: center;
+}
+/* =============================================
+			  End footer-section                 
+================================================= */
